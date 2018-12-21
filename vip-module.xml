@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dleplugin>
+	<name>VIP Module</name>
+	<description>Paypal destekli, ücretli üyelik sistemi</description>
+	<icon>engine/skins/images/vip.png</icon>
+	<version>1.2</version>
+	<dleversion>13.0</dleversion>
+	<versioncompare>greater</versioncompare>
+	<upgradeurl></upgradeurl>
+	<filedelete>1</filedelete>
+	<mysqlinstall><![CDATA[CREATE TABLE IF NOT EXISTS {prefix}_vip_templates (
+	`id` tinyint(3) unsigned NOT NULL AUTO_INCREMENT,
+	`name` varchar(20) NOT NULL DEFAULT '',
+	`title` varchar(150) NOT NULL DEFAULT '',
+	`template` text NOT NULL,
+	`use_html` tinyint(1) NOT NULL DEFAULT '0',
+	`send` tinyint(1) NOT NULL DEFAULT '0',
+	PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET={charset};
+
+CREATE TABLE IF NOT EXISTS {prefix}_vip_payments (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`user_id` int(11) NOT NULL,
+	`plan_id` int(11) NOT NULL,
+	`time` smallint(5) NOT NULL,
+	`period` varchar(20) NOT NULL,
+	`b_date` varchar(20) NOT NULL COMMENT 'Satın alınma tarihi',
+	`a_date` varchar(20) NOT NULL COMMENT 'Aktifleştirilme tarihi',
+	`f_date` varchar(20) NOT NULL COMMENT 'Üyelik bitiş tarihi',
+	`data` text NOT NULL,
+	`hash` varchar(32) NOT NULL,
+	`u_group` varchar(5) NOT NULL,
+	`n_group` smallint(5) NOT NULL,
+	`t_group` smallint(5) NOT NULL,
+	`approve` tinyint(1) NOT NULL DEFAULT '0',
+	PRIMARY KEY (`id`),
+	KEY `user_id` (`user_id`,`plan_id`)
+) ENGINE=InnoDB DEFAULT CHARSET={charset};
+
+CREATE TABLE IF NOT EXISTS {prefix}_vip_plans (
+	`id` int(11) NOT NULL AUTO_INCREMENT,
+	`title` varchar(60) NOT NULL DEFAULT 'VIP Plan Title',
+	`alt_title` varchar(80) NOT NULL DEFAULT 'Alternative VIP Plan Title',
+	`time` smallint(5) NOT NULL,
+	`period` varchar(20) NOT NULL DEFAULT 'day',
+	`price` varchar(8) NOT NULL,
+	`discount` varchar(8) NOT NULL,
+	`currency` varchar(10) NOT NULL,
+	`a_group` varchar(80) NOT NULL,
+	`u_group` smallint(5) NOT NULL,
+	`n_group` smallint(5) NOT NULL,
+	`paypal` varchar(100) NOT NULL,
+	`sold` smallint(5) NOT NULL DEFAULT '0',
+	`c_time` varchar(25) NOT NULL,
+	PRIMARY KEY (`id`),
+	KEY `time` (`time`,`period`)
+) ENGINE=InnoDB DEFAULT CHARSET={charset};]]></mysqlinstall>
+	<mysqlupgrade><![CDATA[]]></mysqlupgrade>
+	<mysqlenable><![CDATA[INSERT INTO {prefix}_vip_templates (name, template, use_html) VALUES ('pm_ps', '', 0), ('mail_ps', '', 0), ('pm_ps_admin', '', 0), ('mail_ps_admin', '', 0), ('pm_vf', '', 0), ('mail_vf', '', 0);
+INSERT INTO {prefix}_admin_sections (name, icon, title, descr, allow_groups) VALUES ('vip', 'engine/skins/images/vip.png', 'MWS VIP Module v1.2', 'Paypal destekli, ücretli üyelik sistemi', '1');]]></mysqlenable>
+	<mysqldisable><![CDATA[DELETE FROM {prefix}_admin_sections WHERE name = 'vip';]]></mysqldisable>
+	<mysqldelete><![CDATA[DROP TABLE IF EXISTS {prefix}_vip_templates;
+DROP TABLE IF EXISTS {prefix}_vip_payments;
+DROP TABLE IF EXISTS {prefix}_vip_plans;
+DELETE FROM {prefix}_admin_sections WHERE name = 'vip';]]></mysqldelete>
+	<file name="engine/engine.php">
+		<operation action="before">
+			<searchcode><![CDATA[case "changemail" :]]></searchcode>
+			<replacecode><![CDATA[// VIP Module
+	case "vip" :
+		include ENGINE_DIR . '/modules/vip.module.php';
+		break;
+// VIP Module]]></replacecode>
+		</operation>
+	</file>
+	<file name="engine/modules/sitelogin.php">
+		<operation action="replace">
+			<searchcode><![CDATA[$db->query ( "UPDATE " . USERPREFIX . "_users SET user_group='{$user_group[$member_id['user_group']]['rid']}', time_limit='' WHERE user_id='{$member_id['user_id']}'" );]]></searchcode>
+			<replacecode><![CDATA[// VIP Module
+			include ENGINE_DIR . "/modules/vip.cron.php";
+// VIP Module
+			//$db->query ( "UPDATE " . USERPREFIX . "_users SET user_group='{$user_group[$member_id['user_group']]['rid']}', time_limit='' WHERE user_id='{$member_id['user_id']}'" );]]></replacecode>
+		</operation>
+		<operation action="replace">
+			<searchcode><![CDATA[$member_id['user_group'] = $user_group[$member_id['user_group']]['rid'];]]></searchcode>
+			<replacecode><![CDATA[//$member_id['user_group'] = $user_group[$member_id['user_group']]['rid'];]]></replacecode>
+		</operation>
+	</file>
+</dleplugin>

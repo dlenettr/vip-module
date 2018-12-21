@@ -1,0 +1,125 @@
+<?php
+/*
+=============================================
+ Name      : MWS VIP Module v1.2
+ Translate : Mehmet Hanoğlu ( MaRZoCHi )
+ Site      : https://dle.net.tr/
+=============================================
+*/
+
+$lang['mwsvip_0'] = "You can create special plans for your users.";
+$lang['mwsvip_1'] = "Enter plan details";
+$lang['mwsvip_2'] = "Add Plan";
+$lang['mwsvip_3'] = "Cancel";
+$lang['mwsvip_4'] = "Show Plans";
+$lang['mwsvip_5'] = "Module Settings";
+$lang['mwsvip_6'] = "Module is open?";
+$lang['mwsvip_7'] = "Do you want to activate the module?";
+$lang['mwsvip_8'] = "All Plans";
+$lang['mwsvip_9'] = "Go Back";
+$lang['mwsvip_10'] = "Plan title";
+$lang['mwsvip_11'] = "Alternative title";
+$lang['mwsvip_12'] = "Enter a short title for plan";
+$lang['mwsvip_13'] = "This title will shown in paypal page";
+$lang['mwsvip_14'] = "Aviable tags for this field";
+$lang['mwsvip_15'] = "<b>{time}</b> - Time ( 1, 2, 3 )";
+$lang['mwsvip_16'] = "<b>{period}</b> - Period ( month, week, day )";
+$lang['mwsvip_17'] = "<b>{username}</b> - User name";
+$lang['mwsvip_18'] = "Plan time";
+$lang['mwsvip_19'] = "Hour";
+$lang['mwsvip_20'] = "Day";
+$lang['mwsvip_21'] = "Week";
+$lang['mwsvip_22'] = "Month";
+$lang['mwsvip_23'] = "Year";
+$lang['mwsvip_24'] = "Price and currency and if you want you can speciy discount price ( Format: 0.00 )";
+$lang['mwsvip_25'] = "Paypal mail address";
+$lang['mwsvip_26'] = "<b>{title}</b> - Title of plan";
+$lang['mwsvip_27'] = "Allowed groups for this plan";
+$lang['mwsvip_28'] = "User group for plan. User will be moved to this group";
+$lang['mwsvip_29'] = "When the time is finished, user will be moved to this group";
+$lang['mwsvip_30'] = "The payment will be sent to this e-mail";
+$lang['mwsvip_31'] = "ID";
+$lang['mwsvip_32'] = "Title";
+$lang['mwsvip_33'] = "Time and Period";
+$lang['mwsvip_34'] = "Sold";
+$lang['mwsvip_35'] = "Price";
+$lang['mwsvip_36'] = "Paypal";
+$lang['mwsvip_37'] = "Group";
+$lang['mwsvip_38'] = "Actions";
+$lang['mwsvip_39'] = "Clone";
+$lang['mwsvip_40'] = "Edit";
+$lang['mwsvip_41'] = "Delete";
+$lang['mwsvip_42'] = "Default paypal mail address";
+$lang['mwsvip_43'] = "If not specified paypal mail address for plan, system will use this";
+$lang['mwsvip_44'] = "Return URL";
+$lang['mwsvip_45'] = "When payment process finished succesfully, user will be redirected to this URL";
+$lang['mwsvip_46'] = "Cancel URL";
+$lang['mwsvip_47'] = "When payment process was fail, user will be redirected to this URL";
+$lang['mwsvip_48'] = "Payments";
+$lang['mwsvip_49'] = "All Payments";
+$lang['mwsvip_50'] = "Time";
+$lang['mwsvip_51'] = "Period";
+$lang['mwsvip_52'] = "Currency";
+$lang['mwsvip_53'] = "Site URL";
+$lang['mwsvip_54'] = "Select";
+$lang['mwsvip_55'] = "Information";
+$lang['mwsvip_56'] = "Save";
+$lang['mwsvip_57'] = "Delete confirmation";
+$lang['mwsvip_58'] = "Do you want to delete this plan ?";
+$lang['mwsvip_59'] = "#1 - Not valid parameters";
+$lang['mwsvip_60'] = "VIP plan added successfully";
+$lang['mwsvip_61'] = "VIP plan edited successfully";
+$lang['mwsvip_62'] = "#2 - Not valid data";
+$lang['mwsvip_63'] = "Plan deleted successfully";
+$lang['mwsvip_64'] = "Own group";
+$lang['mwsvip_65'] = "Plan price";
+$lang['mwsvip_66'] = "Discount amount";
+$lang['mwsvip_67'] = "Discount";
+$lang['mwsvip_68'] = "Activate";
+$lang['mwsvip_69'] = "Do you want to delete this payment ? If yes, user will be moved to own user group.";
+$lang['mwsvip_70'] = "Group default";
+$lang['mwsvip_71'] = "Notifications";
+$lang['mwsvip_72'] = "All Notifications";
+$lang['mwsvip_73'] = "Send notification";
+$lang['mwsvip_74'] = "Aviable tags for this template";
+$lang['mwsvip_75'] = "User";
+$lang['mwsvip_76'] = "Admin";
+$lang['mwsvip_77'] = "Payment succesfull";
+$lang['mwsvip_78'] = "VIP time is up";
+$lang['mwsvip_79'] = "Templates saved successfully";
+$lang['mwsvip_80'] = "User Name";
+$lang['mwsvip_81'] = "VIP Group";
+$lang['mwsvip_82'] = "After VIP";
+$lang['mwsvip_83'] = "Activation Date";
+$lang['mwsvip_84'] = "Finish Date";
+$lang['mwsvip_85'] = "Price / Fee";
+$lang['mwsvip_86'] = "Site Title";
+$lang['mwsvip_87'] = "Waiting";
+$lang['mwsvip_88'] = "Link";
+$lang['mwsvip_89'] = "Title for this message";
+$lang['mwsvip_90'] = "Administrator's username";
+$lang['mwsvip_91'] = "PM notifications will be sent with this username";
+$lang['mwsvip_92'] = "User IDs of administrators";
+$lang['mwsvip_93'] = "PM notifications will be sent to specified administrators. ( Seperate with comma )";
+$lang['mwsvip_94'] = "IPN Parameter";
+$lang['mwsvip_95'] = "For security reasons, please change this on time. User [a-z] characters only. Otherwise, you can take fake payments.";
+$lang['mwsvip_96'] = "Reload page?";
+$lang['mwsvip_97'] = "Yes";
+$lang['mwsvip_98'] = "No";
+$lang['mwsvip_99'] = "#3 Unknown plan id";
+$lang['mwsvip_100'] = "#4 Users not matched or payment not completed";
+$lang['mwsvip_101'] = "#5 Unknown process";
+$lang['mwsvip_102'] = "#6 Payment activated and notifications sent";
+$lang['mwsvip_103'] = "#7 Unknown process or plan id";
+$lang['mwsvip_104'] = "#8 This plan can't be bought by users of your usergroup";
+$lang['mwsvip_105'] = "#9 Module is offline";
+$lang['mwsvip_106'] = "#10 Payment already activated";
+$lang['mwsvip_107'] = "Payment deleted and user moved to own group";
+$lang['mwsvip_108'] = "Payment deleted";
+$lang['mwsvip_109'] = "Finished";
+$lang['mwsvip_110'] = "Please fill the form completely";
+// v1.1
+$lang['mwsvip_111'] = "Info";
+$lang['mwsvip_112'] = "Link copied to clipboard";
+
+?>

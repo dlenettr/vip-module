@@ -1,0 +1,125 @@
+<?php
+/*
+=============================================
+ Name      : MWS VIP Module v1.2
+ Translate : Mehmet Hanoğlu ( MaRZoCHi )
+ Site      : https://dle.net.tr/
+=============================================
+*/
+
+$lang['mwsvip_0'] = "Kullanıcılarınız için özel planlar oluşturabilirsiniz";
+$lang['mwsvip_1'] = "Plan ayrıntılarını giriniz";
+$lang['mwsvip_2'] = "Plan Ekle";
+$lang['mwsvip_3'] = "İptal Et";
+$lang['mwsvip_4'] = "Planları Göster";
+$lang['mwsvip_5'] = "Modül Ayarları";
+$lang['mwsvip_6'] = "Modül açık mı?";
+$lang['mwsvip_7'] = "Modülü aktifleştirmek istiyor musunuz?";
+$lang['mwsvip_8'] = "Tüm Planlar";
+$lang['mwsvip_9'] = "Geri Dön";
+$lang['mwsvip_10'] = "Plan başlığı";
+$lang['mwsvip_11'] = "Alternatif başlık";
+$lang['mwsvip_12'] = "Plan için kısa bir başlık girin";
+$lang['mwsvip_13'] = "Bu başlık paypal sayfasına görünecektir";
+$lang['mwsvip_14'] = "Bu alan için kullanılabilir taglar";
+$lang['mwsvip_15'] = "<b>{time}</b> - Süre ( 1, 2, 3 )";
+$lang['mwsvip_16'] = "<b>{period}</b> - Periyod ( ay, hafta, gün )";
+$lang['mwsvip_17'] = "<b>{username}</b> - Kullanıcı adı";
+$lang['mwsvip_18'] = "Plan süresi";
+$lang['mwsvip_19'] = "Saat";
+$lang['mwsvip_20'] = "Gün";
+$lang['mwsvip_21'] = "Hafta";
+$lang['mwsvip_22'] = "Ay";
+$lang['mwsvip_23'] = "Yıl";
+$lang['mwsvip_24'] = "Ücret ve kur ve eğer isterseniz indirim miktarı belirtebilirsiniz. ( Format: 0.00 )";
+$lang['mwsvip_25'] = "Paypal mail adresi";
+$lang['mwsvip_26'] = "<b>{title}</b> - Plan başlığı";
+$lang['mwsvip_27'] = "Bu plan için izin verilen gruplar";
+$lang['mwsvip_28'] = "Plan için kullanıcı grubu. Kullanıcı bu gruba taşınacak";
+$lang['mwsvip_29'] = "Süre bittiğinde, kullanıcı bu gruba taşınacak";
+$lang['mwsvip_30'] = "Ödeme bu e-mail adresine gönderilecek";
+$lang['mwsvip_31'] = "ID";
+$lang['mwsvip_32'] = "Başlık";
+$lang['mwsvip_33'] = "Süre ve Periyod";
+$lang['mwsvip_34'] = "Satış";
+$lang['mwsvip_35'] = "Ücret";
+$lang['mwsvip_36'] = "Paypal";
+$lang['mwsvip_37'] = "Grup";
+$lang['mwsvip_38'] = "İşlemler";
+$lang['mwsvip_39'] = "Klonla";
+$lang['mwsvip_40'] = "Düzenle";
+$lang['mwsvip_41'] = "Sil";
+$lang['mwsvip_42'] = "Varsayılan paypal mail adresi";
+$lang['mwsvip_43'] = "Eğer plan için mail adresi belirtilmediyse, sistem bunu kullanacaktır";
+$lang['mwsvip_44'] = "Geri dönüş URL'si";
+$lang['mwsvip_45'] = "Ödeme işlemi başarılı olarak tamamlandığında, kullanıcı bu URL'ye yönlendirilecektir";
+$lang['mwsvip_46'] = "İptal URL'si";
+$lang['mwsvip_47'] = "Ödeme işlemi başarısız olduğunda, kullanıcı bu URL'ye yönlendirilecektir";
+$lang['mwsvip_48'] = "Ödemeler";
+$lang['mwsvip_49'] = "Tüm Ödemeler";
+$lang['mwsvip_50'] = "Süre";
+$lang['mwsvip_51'] = "Periyod";
+$lang['mwsvip_52'] = "Kur";
+$lang['mwsvip_53'] = "Site URL";
+$lang['mwsvip_54'] = "Seç";
+$lang['mwsvip_55'] = "Bilgilendirme";
+$lang['mwsvip_56'] = "Kaydet";
+$lang['mwsvip_57'] = "Silme onayı";
+$lang['mwsvip_58'] = "Bu planı silmek istiyor musunuz ?";
+$lang['mwsvip_59'] = "#1 - Geçersiz parametreler";
+$lang['mwsvip_60'] = "VIP planı başarıyla eklendi";
+$lang['mwsvip_61'] = "VIP planı başarıyla düzenlendi";
+$lang['mwsvip_62'] = "#2 - Geçersiz veri";
+$lang['mwsvip_63'] = "Plan başarıyla silindi";
+$lang['mwsvip_64'] = "Kendi grubu";
+$lang['mwsvip_65'] = "Plan ücreti";
+$lang['mwsvip_66'] = "İndirim miktarı";
+$lang['mwsvip_67'] = "İndirim";
+$lang['mwsvip_68'] = "Aktifleştir";
+$lang['mwsvip_69'] = "Bu ödemeyi silmek istiyor musunuz ? Eğer silerseniz kullanıcı kendi grubuna taşınacaktır.";
+$lang['mwsvip_70'] = "Grup varsayılanı";
+$lang['mwsvip_71'] = "Bildirimler";
+$lang['mwsvip_72'] = "Tüm Bildirimler";
+$lang['mwsvip_73'] = "Bildirim gönder";
+$lang['mwsvip_74'] = "Bu şablon için geçerli taglar";
+$lang['mwsvip_75'] = "Kullanıcı";
+$lang['mwsvip_76'] = "Admin";
+$lang['mwsvip_77'] = "Ödeme başarılı";
+$lang['mwsvip_78'] = "VIP süresi bitti";
+$lang['mwsvip_79'] = "Şablonlar başarıyla kaydedildi";
+$lang['mwsvip_80'] = "Kullanıcı Adı";
+$lang['mwsvip_81'] = "VIP Grubu";
+$lang['mwsvip_82'] = "VIP Sonrası";
+$lang['mwsvip_83'] = "Aktifleştirme Tarihi";
+$lang['mwsvip_84'] = "Bitiş Tarihi";
+$lang['mwsvip_85'] = "Ücret / Kesinti";
+$lang['mwsvip_86'] = "Site Başlığı";
+$lang['mwsvip_87'] = "Bekliyor";
+$lang['mwsvip_88'] = "Link";
+$lang['mwsvip_89'] = "Bu mesaj için başlık";
+$lang['mwsvip_90'] = "Yöneticinin kullanıcı adı";
+$lang['mwsvip_91'] = "PM bildirimleri bu kullanıcı adıyla gönderilecek";
+$lang['mwsvip_92'] = "Yöneticilerin kullanıcı id leri";
+$lang['mwsvip_93'] = "PM bildirimleri belirtilen kullanıcı id lerine gönderilecektir. ( Virgül ile ayırın )";
+$lang['mwsvip_94'] = "IPN Parametresi";
+$lang['mwsvip_95'] = "Güvenlik nedeniyle, bunu bir kez değiştiriniz. Sadece [a-z] karakterlerini kullanınınız. Aksi halde sahte ödemeler alabilirsiniz.";
+$lang['mwsvip_96'] = "Sayfa yenilensin mi?";
+$lang['mwsvip_97'] = "Evet";
+$lang['mwsvip_98'] = "Hayır";
+$lang['mwsvip_99'] = "#3 Bilinmeyen plan id";
+$lang['mwsvip_100'] = "#4 Kullanıcılar eşleşmedi veya ödeme tamamlanmadı";
+$lang['mwsvip_101'] = "#5 Bilinmeyen işlem";
+$lang['mwsvip_102'] = "#6 Ödeme aktifleştirildi ve bildirimler gönderildi";
+$lang['mwsvip_103'] = "#7 Bilinmeyen işlem veya plan idsi";
+$lang['mwsvip_104'] = "#8 Bu plan sizin kullanıcı grubunuzdaki kullanıcılar tarafından alınamaz";
+$lang['mwsvip_105'] = "#9 Modül devre dışı";
+$lang['mwsvip_106'] = "#10 Ödeme zaten aktifleştirilmiş";
+$lang['mwsvip_107'] = "Ödeme silindi ve kullanıcı kendi grubuna taşındı";
+$lang['mwsvip_108'] = "Ödeme silindi";
+$lang['mwsvip_109'] = "Bitti";
+$lang['mwsvip_110'] = "Lütfen formu tam olarak doldurun";
+// v1.1
+$lang['mwsvip_111'] = "Bilgi";
+$lang['mwsvip_112'] = "Link panoya kopyalandı";
+
+?>
